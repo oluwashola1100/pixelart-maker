@@ -3,7 +3,8 @@
 
 <head>
     <title>Pixel Art Maker!</title>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -11,14 +12,23 @@
     <h1>Lab: Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        <label for="height"> Grid Height:</label>
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
-        <label for="width">  Grid Width:</label>
-        <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <input type="submit">
-    </form>
 
+
+    <div class="jumbotron">
+        <div class="container">
+            <form class="form-inline" id="sizePicker">
+                <div class="form-group mb-2">
+                    <label for="height">Grid Height: </label>
+                    <input type="number" id="inputHeight" class="form-control" name="height" min="1" value="1">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="width">Grid Width: </label>
+                    <input type="number" id="inputWidth" class="form-control" name="width" min="1" value="1">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">submit</button>
+            </form>
+        </div>
+    </div>
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
 
