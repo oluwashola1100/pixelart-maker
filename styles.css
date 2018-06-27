@@ -2,10 +2,24 @@ body {
     text-align: center;
 }
 
+.jumbotron {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    justify-content: center;
+}
+
+#pixelCanvas {
+    margin: 40px auto;
+}
+
 h1 {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
+    color: #0069d9;
 }
 
 h2 {
@@ -37,4 +51,5 @@ td {
 
 input[type=number] {
     width: 6em;
+    margin-left: 5px;
 }
