@@ -22,6 +22,7 @@ function makeGrid() {
             tr.appendChild(td);
         }
     }
+    //target the td element and add a background color to it when it is clicked
     canvas.addEventListener('click', function(e) {
         e.preventDefault();
         if (e.target.nodeName === 'TD') {
